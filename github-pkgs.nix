@@ -5,7 +5,7 @@
     name = "BPCells";
     src = pkgs.fetchgit {
       url = "https://github.com/bnprks/BPCells";
-      rev = "0e23af2bc4de2acf9926da71ef1d241be9a35d90";
+      rev = "v0.3.0";
       sha256 = "sha256-UvFS7qxW55qgqpen77Zigw6dXsSyUyNnx+vup/JHR1c=";
     };
     postPatch = ''
