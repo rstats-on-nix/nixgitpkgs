@@ -2,8 +2,8 @@ let
  pkgs = import (fetchTarball "https://github.com/rstats-on-nix/nixpkgs/archive/2025-04-11.tar.gz") { };
 
  githubPkgs = builtins.fetchurl {
-    url = "https://raw.githubusercontent.com/rstats-on-nix/github-pkgs/master/github-pkgs.nix";
-    sha256 = "";
+    url = "https://raw.githubusercontent.com/rstats-on-nix/nixgitpkgs/refs/heads/master/github-pkgs.nix";
+    sha256 = "sha256:1hnfwll3ig7gb1hz3dj8nk0d01g4x0m8i5dzjxv9paqjickbskgl";
   };
 
   rPackages = pkgs.rPackages // githubPkgs;
